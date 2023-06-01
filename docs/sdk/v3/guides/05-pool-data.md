@@ -87,8 +87,7 @@ We define our GraphQL query:
  ticks (
           where: {
             poolAddress: "${poolAddress.toLowerCase()}", 
-            liquidityGross_gt: "0", 
-            liquidityNet_gt: "0"}
+            liquidityGross_gt: "0"}
           first: 1000
         ) {
           tickIdx
