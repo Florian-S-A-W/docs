@@ -88,7 +88,9 @@ We define our GraphQL query:
           where: {
             poolAddress: "${poolAddress.toLowerCase()}", 
             liquidityGross_gt: "0"}
-          first: 1000
+          first: 1000,
+          orderBy: tickIdx,
+          orderDirection: asc
         ) {
           tickIdx
           liquidityGross
